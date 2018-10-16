@@ -93,3 +93,8 @@ body{
 .main-menu ul h2 a:hover{
     color: midnightblue;
 }
+/* End menu */
+/* Info Block */
+.information-block{
+    flex-direction: row;
+}
