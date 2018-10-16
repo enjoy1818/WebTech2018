@@ -45,4 +45,18 @@ body{
 
 }
 /* End navbar */
-/* Dropdown Menu */
+/*Main Menu */
+.main-menu{
+    background-color: green;
+    display: inherit;
+    flex-direction: row;
+    font-size: 1.25em;
+    justify-content: space-evenly;
+}
+.main-menu ul li{
+    list-style: none;
+    text-align: center;
+}
+.main-menu ul li:first-child{
+    font-size: 1.5em;
+}
