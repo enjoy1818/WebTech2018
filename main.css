@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+}
+body{
+    margin: 0 0 0 0;
+}
+/* Navbar */
+.navbar{
+    flex-direction: row;
+    min-height: 25%;
+    background-color: orangered;
+}
+.navbar-menu{
+    height: 2.5%;
+    width: 2.5%;
+    align-self: center;
+    margin-left: 90%;
+}
+.navbar-menu:hover{
+    transform: scale(1.5);
+    transition-delay: 50ms;
+    transition-duration: 100ms;
+}
