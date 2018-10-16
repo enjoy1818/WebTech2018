@@ -12,19 +12,19 @@
     <div class="container">
         <div class="navbar container">
             <div class="navbar-logo">
-                <h1>Hello</h1>
+                <h1>DSA Learning center</h1>
             </div>
             <div class="navbar-idle">
 
             </div>
-            <div class="navbar-menu" onclick="showHide()">
-                <img src="/Image/menu.svg" alt="">
+            <div class="navbar-menu">
+                <img src="/Image/menu.svg" onclick="showHide()">
             </div>
         </div>
-        <div class="main-menu container">
+        <div class="main-menu container" id="dropdown">
             <ul>
                 <li>Array&List</li>
-                <li>List</li>
+                <li><a href="#">List</a></li>
                 <li>Array</li>
                 <li>Linked List</li>
             </ul>
@@ -42,5 +42,14 @@
             </ul>
         </div>
     </div>
+    <div class="main-page container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eum incidunt quidem. Architecto nisi commodi quas. Pariatur quisquam eius illo delectus magnam aliquid quibusdam facilis, itaque praesentium velit. Pariatur suscipit molestiae eos veniam? Quasi, dolor. Perferendis molestiae praesentium aliquam ipsum tenetur explicabo, quia eum, iste rem ex pariatur dignissimos commodi!
+        </p>
+    </div>
 </body>
+<script src="/main.js"></script>
+<script>
+    document.getElementById("dropdown").style.display = "none";
+</script>
 </html>

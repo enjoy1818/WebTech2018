@@ -23,12 +23,12 @@ body{
     height: 22.5%;
     width: 22.5%;
     transform: rotate(90deg);
+    transition: .5s;
     margin-left: 50%;
 }
 .navbar-menu img:hover{
-    transform: scale(1.25) rotate(180deg);
-    transition-delay: 50ms;
-    transition-duration: 500ms;
+    transform: rotate(180deg);
+    transition: .5s;
     cursor: pointer;
 }
 .navbar-idle{
@@ -37,7 +37,7 @@ body{
 .navbar-logo{
     flex-grow: 1;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .navbar-logo h1{
     margin-top: 1.0%;
@@ -47,16 +47,34 @@ body{
 /* End navbar */
 /*Main Menu */
 .main-menu{
-    background-color: green;
-    display: inherit;
+    background-color: goldenrod;
+    display: none;
     flex-direction: row;
     font-size: 1.25em;
+    color: black;
     justify-content: space-evenly;
+    z-index: 100;
+    opacity: 0.8;
 }
 .main-menu ul li{
     list-style: none;
     text-align: center;
+    transition: .1s;
+}
+.main-menu ul li:hover{
+    transform: scale(1.75);
+    transition: .1s;
 }
 .main-menu ul li:first-child{
     font-size: 1.5em;
+
+}
+.main-menu ul li a{
+    text-decoration: none;
+    color: black;
+    transition: .25s;
+}
+.main-menu ul li a:hover{
+    color:silver;
+    transition: .25s;
 }
