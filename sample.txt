@@ -1,0 +1,2 @@
+<h1 id="header">List & Array</h1>
+<h2>Hello this is from sample.txt with the power of AJAX</h2>
