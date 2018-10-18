@@ -7,3 +7,13 @@ function showHide(){
         state.style.display = "none";
     }
 };
+function loadDoc(){
+    var httpReq = new XMLHttpRequest();
+    httpReq.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            document.getElementById("info-block").innerHTML = this.responseText;
+        }
+    };
+    httpReq.open("GET", "sample.txt", true);
+    httpReq.send();
+};

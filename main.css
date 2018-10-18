@@ -96,5 +96,13 @@ body{
 /* End menu */
 /* Info Block */
 .information-block{
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
+}
+.information-block-title{
+    font-size: 2em;
+}
+#header{
+    color: red;
+    font-size: 3em;
 }
