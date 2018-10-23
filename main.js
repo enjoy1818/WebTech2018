@@ -13,7 +13,6 @@ function loadDoc(file){
         if(this.readyState == 4 && this.status == 200){
             var parsedJson = JSON.parse(this.responseText);
             document.getElementById("info-block").innerHTML = "<h1>I'm "+parsedJson.name+" "+parsedJson.surname+"</h1><br>";
-
             
         }
     };
