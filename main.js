@@ -7,13 +7,16 @@ function showHide(){
         state.style.display = "none";
     }
 };
-function loadDoc(){
+function loadDoc(file){
     var httpReq = new XMLHttpRequest();
     httpReq.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
-            document.getElementById("info-block").innerHTML = this.responseText;
+            var parsedJson = JSON.parse(this.responseText);
+            document.getElementById("info-block").innerHTML = "<h1>I'm "+parsedJson.name+" "+parsedJson.surname+"</h1><br>";
+
+            
         }
     };
-    httpReq.open("GET", "sample.txt", true);
+    httpReq.open("GET", file, true);
     httpReq.send();
 };
