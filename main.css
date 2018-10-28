@@ -49,7 +49,15 @@ body{
 .navbar-logo h1{
     margin-top: 1.0%;
     margin-bottom: 2.0%;
-
+    transition: 0.25s;
+}
+.navbar-logo a{
+    text-decoration: none;
+    color: black;
+}
+.navbar-logo h1:hover{
+    transform: scale(1.25, 1.25);
+    transition: .1s;
 }
 /* End navbar */
 /*Main Menu */
