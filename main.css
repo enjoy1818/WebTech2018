@@ -118,7 +118,7 @@ body{
     position: fixed;
     left: 95%;
     top: 70%;
-    opacity: 0.25;
+    opacity: 0.4;
     transition: 0.15s;
 }
 #chevron-up:hover{

@@ -8,16 +8,16 @@ function showHide(){
     }
 };
 function loadDoc(file){
+    // Using this function to load a file and render in html without refreshing eg.'loadDoc('file_name.extension')'
     var httpReq = new XMLHttpRequest();
     httpReq.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
-            var parsedJson = JSON.parse(this.responseText);
-            document.getElementById("info-block").innerHTML = "<h1>I'm "+parsedJson.name+" "+parsedJson.surname+"</h1><br>";
-            
+            document.getElementById("info-block").innerHTML = httpReq.responseText;
         }
     };
     httpReq.open("GET", file, true);
     httpReq.send();
+    document.getElementById("dropdown").style.display = "none";
 };
 function toTop(){
     document.getElementById("header").scrollIntoView();
