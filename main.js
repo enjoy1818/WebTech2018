@@ -19,3 +19,6 @@ function loadDoc(file){
     httpReq.open("GET", file, true);
     httpReq.send();
 };
+function toTop(){
+    window.scrollTo(0, 0);
+};

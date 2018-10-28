@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -7,6 +10,10 @@ body{
     margin: 0 0 0 0;
     background-color: aliceblue;
 }
+/* header */
+.header{
+}
+/* End header */
 /* Navbar */
 .navbar{
     flex-direction: row;
@@ -52,13 +59,14 @@ body{
     flex-direction: column;
     font-size: 1.25em;
     color: black;
-    justify-content: space-evenly;
+    align-items: center;
     z-index: 100;
     opacity: 0.8;
 }
 .main-menu .main-menu-row{
     flex-direction: row;
     display: inherit;
+    justify-content: space-evenly;
 }
 .main-menu ul{
     text-align: center;
@@ -87,6 +95,11 @@ body{
     margin-bottom: 0;
     margin-top: 0;
     font-size: 1em;
+    transition: .15s;
+}
+.main-menu ul h2:hover{
+    transform: scale(1.25);
+    transition: .15s;
 }
 .main-menu ul h2 a{
     text-decoration: none;
@@ -96,6 +109,16 @@ body{
     color: midnightblue;
 }
 /* End menu */
+#chevron-up{
+    display: inline-block;
+    z-index: 110;
+    width: 2em;
+    height: 2em;
+    position: fixed;
+    left: 95%;
+    bottom: 50%;
+    top: 50%;
+}
 /* Info Block */
 .information-block{
     flex-direction: column;
