@@ -109,6 +109,7 @@ body{
     color: midnightblue;
 }
 /* End menu */
+/* to top navigatop */
 #chevron-up{
     display: inline-block;
     z-index: 110;
@@ -116,9 +117,17 @@ body{
     height: 2em;
     position: fixed;
     left: 95%;
-    bottom: 50%;
-    top: 50%;
+    top: 70%;
+    opacity: 0.25;
+    transition: 0.15s;
 }
+#chevron-up:hover{
+    cursor: pointer;
+    transition: 0.15s;
+    transform: scale(1.5);
+    opacity: 0.75;
+}
+/* top top end */
 /* Info Block */
 .information-block{
     flex-direction: column;
