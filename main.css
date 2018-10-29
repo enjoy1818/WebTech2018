@@ -9,9 +9,11 @@ body{
     font-family: 'Kanit', sans-serif;
     margin: 0 0 0 0;
     background-color: aliceblue;
+    overflow: -moz-scrollbars-none;
 }
 /* header */
-.header{
+body::-webkit-scrollbar{
+    display: none;
 }
 /* End header */
 /* Navbar */
