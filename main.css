@@ -10,6 +10,9 @@ body{
     margin: 0 0 0 0;
     background-color: aliceblue;
     overflow: -moz-scrollbars-none;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 /* header */
 body::-webkit-scrollbar{
@@ -132,7 +135,7 @@ body::-webkit-scrollbar{
     height: 2em;
     position: fixed;
     left: 95%;
-    top: 90%;
+    top: 85%;
     opacity: 0.4;
     transition: 0.15s;
 }
@@ -143,6 +146,11 @@ body::-webkit-scrollbar{
     opacity: 0.75;
 }
 /* top top end */
+/* Main page */
+.main-page{
+    display: flex;
+    flex: 1;
+}
 /* Info Block */
 .information-block{
     flex-direction: column;
@@ -152,4 +160,10 @@ body::-webkit-scrollbar{
 }
 .information-block-title{
     font-size: 2em;
+}
+/* footer */
+.footer{
+    display: inherit;
+    background-color: rgba(0, 0, 0, 0.3);
+    flex-shrink: 3;
 }
