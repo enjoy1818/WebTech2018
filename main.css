@@ -135,7 +135,7 @@ body::-webkit-scrollbar{
     height: 2em;
     position: fixed;
     left: 95%;
-    top: 90%;
+    top: 85%;
     opacity: 0.4;
     transition: 0.15s;
 }
@@ -165,4 +165,5 @@ body::-webkit-scrollbar{
 .footer{
     display: inherit;
     background-color: rgba(0, 0, 0, 0.3);
+    flex-shrink: 3;
 }
