@@ -11,10 +11,10 @@
     <title>DSA&Algol</title>
 </head>
 <body>
-    <div class="header container">
+    <div class="header container" id="header">
         <div class="navbar container">
             <div class="navbar-logo">
-                <h1>DSA101</h1>
+                <h1><a href="./index.html">DSA101</a></h1>
             </div>
             <div class="navbar-idle">
 
@@ -26,58 +26,58 @@
         <div class="main-menu container" id="dropdown">
             <div class="main-menu-row">
                 <ul>
-                    <h2><a href="">Data structures and algorithms</a></h2>
-                    <li><a href="">Data types</a></li>
-                    <li><a href="">Data structures</a></li>
-                    <li><a href="">Abstract Data Type</a></li>
-                    <li><a href="">Algorithms and Analysis</a></li>
+                    <h2><a href="#content-header" onclick="loadDoc('./Content/Dsa/dsa.html')">Data structures and algorithms</a></h2>
+                    <li><a href="#content-header" onclick="loadDoc('./Content/Dsa/datatypes.html')">Data types</a></li>
+                    <li><a href="#content-header" onclick="loadDoc('./Content/Dsa/datastructure.html')">Data structures</a></li>
+                    <li><a href="#content-header" onclick="loadDoc('./Content/Dsa/adt.html')">Abstract Data Type</a></li>
+                    <li><a href="#content-header" onclick="loadDoc('./Content/Dsa/algorithm.html')">Algorithms and Analysis</a></li>
                 </ul>
                 <ul>
-                    <h2><a href="">Array&Linked list</a></h2>
-                    <li><a href="">Array</a></li>
-                    <li><a href="">Linked List</a></li>
+                    <h2><a href="#content-header" onclick="loadDoc('./Content/Dsa/ArrayAndLinkedList.html')">Array&Linked list</a></h2>
+                    <li><a href="#content-header" onclick="loadDoc('./Content/Dsa/Array.html')">Array</a></li>
+                    <li><a href="#content-header">Linked List</a></li>
                 </ul>
                 <ul>
-                    <h2><a href="">Stack&Queue</a></h2>
-                    <li><a href="">Stack</a></li>
-                    <li><a href="">Queue</a></li>
+                    <h2><a href="#content-header">Stack&Queue</a></h2>
+                    <li><a href="#content-header">Stack</a></li>
+                    <li><a href="#content-header">Queue</a></li>
                 </ul>
                 <ul>
-                    <h2><a href="">Tree&Binary Tree</a></h2>
-                    <li><a href="">Tree</a></li>
-                    <li><a href="">Binary Tree</a></li>
-                    <li><a href="">Huffman Tree</a></li>
-                    <li><a href="">AVL Tree</a></li>
+                    <h2><a href="#content-header">Tree&Binary Tree</a></h2>
+                    <li><a href="#content-header">Tree</a></li>
+                    <li><a href="#content-header">Binary Tree</a></li>
+                    <li><a href="#content-header">Huffman Tree</a></li>
+                    <li><a href="#content-header">AVL Tree</a></li>
                 </ul>
             </div>
             <div class="main-menu-row">
                 <ul>
-                    <h2><a href="">Graph</a></h2>
-                    <li><a href="">Directed and Undirected graph</a></li>
-                    <li><a href="">Traverse Graph</a></li>
-                    <li><a href="">Graph storage structures</a></li>
-                    <li><a href="">MST</a></li>
-                    <li><a href="">Shortest Path</a></li>
+                    <h2><a href="#content-header">Graph</a></h2>
+                    <li><a href="#content-header">Directed and Undirected graph</a></li>
+                    <li><a href="#content-header">Traverse Graph</a></li>
+                    <li><a href="#content-header">Graph storage structures</a></li>
+                    <li><a href="#content-header">MST</a></li>
+                    <li><a href="#content-header">Shortest Path</a></li>
                 </ul>
                 <ul>
-                    <h2><a href="">Searching algorithms</a></h2>
-                    <li><a href="">Sequential search</a></li>
-                    <li><a href="">Binary search</a></li>
-                    <li><a href="">Hashing</a></li>
+                    <h2><a href="#content-header">Searching algorithms</a></h2>
+                    <li><a href="#content-header">Sequential search</a></li>
+                    <li><a href="#content-header">Binary search</a></li>
+                    <li><a href="#content-header">Hashing</a></li>
                 </ul>
                 <ul>
-                    <h2><a href="">Sorting algorithms</a></h2>
-                    <li><a href="">Insertion sort</a></li>
-                    <li><a href="">Selection sort</a></li>
-                    <li><a href="">Bubble sort</a></li>
-                    <li><a href="">Merge sort</a></li>
-                    <li><a href="">Quick sort</a></li>
+                    <h2><a href="#content-header">Sorting algorithms</a></h2>
+                    <li><a href="#content-header">Insertion sort</a></li>
+                    <li><a href="#content-header">Selection sort</a></li>
+                    <li><a href="#content-header">Bubble sort</a></li>
+                    <li><a href="#content-header">Merge sort</a></li>
+                    <li><a href="#content-header">Quick sort</a></li>
                 </ul>
                 <ul>
-                    <h2><a href="">ทดสอบความรู้</a></h2>
-                    <li><a href="">List</a></li>
-                    <li><a href="#Array" onclick="loadDoc('list_arr.json')">Array</a></li>
-                    <li><a href="#LinkedListTest" onclick="loadDoc('sample2.html')">Linked List</a></li>
+                    <h2><a href="#content-header">ทดสอบความรู้</a></h2>
+                    <li><a href="#content-header">List</a></li>
+                    <li><a href="#Array" onclick="loadDoc('./Content/list_arr.json')">Array</a></li>
+                    <li><a href="#LinkedListTest" onclick="loadDoc('./Subject/test.html')">Linked List</a></li>
                 </ul>
             </div>
         </div>
@@ -85,14 +85,14 @@
     <div class="main-page container">
         <div class="information-block container" id="info-block">
             <h1>Welcome to Datastructure and Algorithms learning site!!!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo accusamus blanditiis assumenda perspiciatis possimus commodi, molestiae ullam quibusdam voluptatum enim qui repellendus ab. A vel laudantium ullam quas praesentium maxime iste dolores deserunt exercitationem officiis debitis, ducimus id optio culpa at ab, nam illo unde porro modi. Ducimus, dolorem odit quis assumenda obcaecati iure necessitatibus pariatur maxime aspernatur a asperiores nihil suscipit officiis ipsum sed delectus. Id quidem consequuntur voluptatibus, ut molestiae voluptates totam sunt nemo, maxime placeat fugiat asperiores autem aperiam distinctio assumenda? Veniam ducimus quis, accusantium vel possimus rem neque velit vitae fugiat minima dolore molestias sapiente dicta similique. Hic veritatis repellendus aspernatur tempora mollitia officia enim eaque impedit cumque iure beatae laborum sequi obcaecati aliquid temporibus commodi facilis unde quibusdam ipsam, quo consequatur architecto magni quia nisi. Reiciendis neque maxime blanditiis odio, ea odit, aliquam repellat minima magnam, modi quod? Sint exercitationem quasi reprehenderit autem, cum perferendis unde earum dolor velit quam aut, eligendi obcaecati expedita animi cupiditate at consequuntur dicta commodi debitis neque inventore? Veniam quos ex repellat sunt vitae cumque mollitia doloribus, fuga esse odit maiores a pariatur itaque id ducimus. Pariatur velit fugit voluptatem ad nostrum! Tenetur mollitia corporis error ratione enim iste esse doloribus rem repellendus qui consequuntur officia ab exercitationem, asperiores sed ducimus. Distinctio velit aliquid dicta inventore maiores odio excepturi atque, culpa possimus quisquam quod aperiam hic, voluptatem molestias illo vitae, tenetur ea at impedit nesciunt! Fugit perspiciatis est error, obcaecati at odio adipisci molestiae corporis distinctio quibusdam ipsam amet tenetur cupiditate nobis, ipsa perferendis labore eius, eum aspernatur. Veritatis est perspiciatis facilis commodi dicta, atque explicabo voluptatibus sunt laboriosam a. Ipsam enim earum animi non quisquam, saepe aperiam dolores cupiditate mollitia, assumenda commodi sint exercitationem voluptate eligendi, consectetur voluptatibus maiores! Maxime aliquam reiciendis eveniet quae excepturi, id earum ab veniam, veritatis perspiciatis ratione? Animi accusantium magnam debitis maiores, delectus iusto magni qui at modi doloremque error fugit quisquam, amet optio, est eum asperiores similique ipsum alias minus aspernatur. Debitis harum at esse consectetur atque iusto, consequuntur necessitatibus incidunt ipsa eius nesciunt deserunt recusandae cumque, officiis accusantium ratione? Vitae rerum eos sed maxime libero deserunt molestiae, laboriosam aut sit recusandae ex vel ullam placeat aperiam alias ad quidem autem? Placeat voluptatum autem pariatur consectetur suscipit? Magni nesciunt quae blanditiis tempora voluptas eos corrupti excepturi nihil? Reiciendis odio consequuntur dignissimos necessitatibus, cupiditate rerum eveniet asperiores voluptatum similique sunt laboriosam eos quam nisi modi laudantium aliquid mollitia repellat nostrum nihil! Amet repellat maxime nisi dolor, labore tenetur porro hic veniam eaque molestias, cum odio eos quisquam. Nam ad architecto provident facere quidem eius ratione mollitia, minus illum facilis neque id hic. Officiis distinctio consectetur, saepe iste animi, veritatis reiciendis commodi optio beatae et totam doloremque expedita excepturi esse nesciunt accusamus labore asperiores. Inventore dolores consequuntur non consectetur velit doloremque culpa enim, quod ipsum alias pariatur reiciendis ullam aliquid possimus eligendi odio in assumenda illo provident, animi autem voluptates quo cupiditate repudiandae! Voluptas eveniet unde, laudantium molestias eius nobis mollitia minus deserunt ut earum fugiat distinctio quam at? Eveniet quibusdam consectetur molestiae qui! Quaerat quasi omnis numquam ratione doloribus rerum explicabo consequuntur, fugit commodi! Possimus adipisci est magnam expedita dolor, quidem iure quas minus nihil modi eius libero atque quod iusto earum hic non in aliquid assumenda totam similique accusamus suscipit culpa! Nesciunt quaerat hic, ab eius corporis nulla, ex sit esse consequuntur fugit repellendus beatae dolore magnam! Fugiat laudantium doloremque, et ipsa quasi tenetur ullam distinctio sint est, commodi, autem sunt? Amet porro saepe, sed vel quidem iusto laboriosam hic impedit corrupti fuga qui rerum expedita voluptatem optio totam. Aspernatur quam mollitia magni, itaque nulla, inventore aut doloremque esse magnam impedit non suscipit velit quia laborum iusto vitae est dolorum sed adipisci ad repellat culpa at provident! Assumenda asperiores omnis doloremque maiores, accusamus perspiciatis quas quaerat mollitia repellat ex similique eligendi ipsam, odio, animi voluptatem earum officiis voluptatibus nihil? Ducimus quisquam doloribus expedita porro, accusamus error modi accusantium quasi iusto unde veniam, aliquam velit sapiente nobis! Esse laborum deserunt officia aspernatur earum modi suscipit officiis. Ab beatae porro error iste itaque repellat eius quod, recusandae consequuntur, temporibus debitis! Est sequi vero nesciunt. Veniam sequi voluptatem obcaecati qui itaque odit explicabo praesentium, quam perferendis, optio illo rerum minus nemo distinctio tenetur voluptas magni cumque error. Nam quibusdam a maxime sequi sed suscipit, libero incidunt sapiente tempore rerum adipisci, eum quod, blanditiis qui sit repellat repudiandae! Cupiditate ut voluptatum placeat nobis consectetur id earum doloremque incidunt minima qui quibusdam, totam saepe omnis dolor voluptas accusamus atque maiores tempore eius rerum labore assumenda debitis ipsum modi? Suscipit quos obcaecati commodi aliquid eveniet deleniti. Sed aliquid eos facilis, corporis autem quia ipsa nulla consequuntur consectetur, temporibus minus eveniet obcaecati itaque harum debitis asperiores amet deleniti, suscipit iusto totam blanditiis non. Dolore ipsum esse temporibus rerum ipsa asperiores aperiam minima non sapiente totam voluptates harum odio quos possimus quis quam aliquid, odit impedit dolorem, repudiandae natus ab magni doloribus. Doloremque labore eius optio voluptatibus laudantium est, incidunt at eum voluptate, commodi deleniti nulla velit porro impedit omnis voluptatem quo, obcaecati dicta reprehenderit minima. Sint voluptatem voluptates rerum necessitatibus quam repudiandae quia natus voluptate, odit iste corporis sit deleniti, molestias dolorem velit blanditiis earum incidunt eos sed facere cumque hic. In asperiores nihil dolores beatae harum magnam earum qui expedita, consectetur enim ad ab veritatis totam illo? Obcaecati labore ea suscipit sapiente dolorem provident tenetur voluptas aut totam iste! Quo eaque dolorem, culpa, maiores odio in rem enim autem, blanditiis quidem ipsa aperiam quos! Aut natus quisquam, consectetur quas ratione autem fugit sapiente maiores, molestias temporibus voluptatibus. Omnis nostrum laborum iusto aperiam impedit iure quod alias quae. Accusamus libero laboriosam sequi aliquid suscipit doloremque odio corporis perspiciatis itaque. Minima voluptas assumenda porro praesentium recusandae ab qui illum quo alias! Magni placeat cumque sint voluptas, aut veniam adipisci velit possimus non ea accusantium, ut accusamus quam, fuga vero est nihil delectus necessitatibus ratione vel labore voluptate sequi! Vitae tempore necessitatibus dolorem quibusdam fuga mollitia est, incidunt doloribus molestias. Quos, dolore?</p>
         </div>
     </div>
     <div class="to-top">
         <img src="./Image/chevron-up.svg" alt="" id="chevron-up" onclick="toTop()">
     </div>
-    <div class="footer container">
-         <h1>Footer</h1>
+    <div class="footer">
+         <p>Hello</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi autem possimus reiciendis incidunt impedit consectetur vero quae error dignissimos quia officiis ut commodi voluptatem vel obcaecati, non quis quas aliquam ex, officia aliquid praesentium quasi fugiat. Recusandae eos magnam nostrum facere odio totam explicabo delectus molestiae. Iure, delectus quia!</p>
     </div>
 </body>
 <script src="./main.js"></script>

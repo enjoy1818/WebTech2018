@@ -9,9 +9,17 @@ body{
     font-family: 'Kanit', sans-serif;
     margin: 0 0 0 0;
     background-color: aliceblue;
+    overflow: -moz-scrollbars-none;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 /* header */
+body::-webkit-scrollbar{
+    display: none;
+}
 .header{
+    margin-bottom: 5%;
 }
 /* End header */
 /* Navbar */
@@ -20,6 +28,7 @@ body{
     min-height: 25%;
     background-color: orangered;
     justify-items: baseline;
+    box-shadow: 0px 1px 2em rgba(0, 0, 0, 0.3);
 }
 .navbar-menu{
     align-self: center;
@@ -27,8 +36,8 @@ body{
     /* justify-self: right; */
 }
 .navbar-menu img{
-    height: 22.5%;
-    width: 22.5%;
+    height: 17.5%;
+    width: 17.5%;
     transform: rotate(90deg);
     transition: .5s;
     margin-left: 50%;
@@ -49,7 +58,16 @@ body{
 .navbar-logo h1{
     margin-top: 1.0%;
     margin-bottom: 2.0%;
-
+    transition: 0.25s;
+    letter-spacing: 0.05em;
+}
+.navbar-logo a{
+    text-decoration: none;
+    color: white;
+}
+.navbar-logo h1:hover{
+    transform: scale(1.25, 1.25);
+    transition: .1s;
 }
 /* End navbar */
 /*Main Menu */
@@ -117,8 +135,8 @@ body{
     height: 2em;
     position: fixed;
     left: 95%;
-    top: 70%;
-    opacity: 0.25;
+    top: 85%;
+    opacity: 0.4;
     transition: 0.15s;
 }
 #chevron-up:hover{
@@ -128,15 +146,24 @@ body{
     opacity: 0.75;
 }
 /* top top end */
+/* Main page */
+.main-page{
+    display: flex;
+    flex: 1;
+}
 /* Info Block */
 .information-block{
     flex-direction: column;
     text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .information-block-title{
     font-size: 2em;
 }
-#header{
-    color: red;
-    font-size: 3em;
+/* footer */
+.footer{
+    display: inherit;
+    background-color: rgba(0, 0, 0, 0.3);
+    flex-shrink: 3;
 }
