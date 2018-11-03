@@ -22,11 +22,15 @@ body::-webkit-scrollbar{
     margin-bottom: 5%;
 }
 /* End header */
+/* Idle */
+.idle{
+    flex-grow: 3;
+}
 /* Navbar */
 .navbar{
     flex-direction: row;
     min-height: 25%;
-    background-color: orangered;
+    background-color: rgba(255, 69, 0);
     justify-items: baseline;
     box-shadow: 0px 1px 2em rgba(0, 0, 0, 0.3);
 }
@@ -38,12 +42,11 @@ body::-webkit-scrollbar{
 .navbar-menu img{
     height: 17.5%;
     width: 17.5%;
-    transform: rotate(90deg);
     transition: .5s;
     margin-left: 50%;
 }
 .navbar-menu img:hover{
-    transform: rotate(180deg);
+    transform: scale(1.75);
     transition: .5s;
     cursor: pointer;
 }
@@ -63,7 +66,7 @@ body::-webkit-scrollbar{
 }
 .navbar-logo a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 .navbar-logo h1:hover{
     transform: scale(1.25, 1.25);
@@ -72,14 +75,17 @@ body::-webkit-scrollbar{
 /* End navbar */
 /*Main Menu */
 .main-menu{
-    background-color: goldenrod;
+    background-color: rgba(255, 69, 0, .875);
     display: none;
     flex-direction: column;
     font-size: 1.25em;
-    color: black;
     align-items: center;
-    z-index: 100;
-    opacity: 0.8;
+    opacity: 0.5;
+    margin-bottom: -25.4%;
+    z-index: 111;
+}
+.main-menu :only-child{
+    z-index: inherit;
 }
 .main-menu .main-menu-row{
     flex-direction: row;
@@ -93,7 +99,7 @@ body::-webkit-scrollbar{
     list-style: none;
     text-align: center;
     transition: .1s;
-    font-size: 1em;
+    font-size: .85em;
 }
 .main-menu ul li:hover{
     transform: scale(1.75);
@@ -106,7 +112,7 @@ body::-webkit-scrollbar{
     transition: .25s;
 }
 .main-menu ul li a:hover{
-    color:grey;
+    color:rgb(36, 36, 168);
     transition: .25s;
 }
 .main-menu ul h2{
@@ -124,7 +130,7 @@ body::-webkit-scrollbar{
     color: black;
 }
 .main-menu ul h2 a:hover{
-    color: midnightblue;
+    color: rgb(66, 66, 215);
 }
 /* End menu */
 /* to top navigatop */
@@ -159,10 +165,16 @@ body::-webkit-scrollbar{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 12.5%;
+    margin-bottom: 5%;
+    align-items: baseline;
 }
 .main-page-menu-items h1{
     font-size: 2em;
+    border-bottom: inherit;
+    border-color: whitesmoke;
+}
+.main-page-menu-items{
+    flex-direction: column;
 }
 .main-page-menu-items ul{
     list-style-type: none;

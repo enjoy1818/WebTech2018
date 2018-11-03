@@ -2,7 +2,7 @@
 function showHide(){
     var state = document.getElementById("dropdown");
     if(state.style.display == "none"){
-        state.style.display = "flex";
+        state.style.display = "inline-flex";
         fadeIn("dropdown", 1000);
     }else{
         state.style.display = "none";
