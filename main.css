@@ -91,10 +91,9 @@ body::-webkit-scrollbar{
 }
 .main-menu ul li{
     list-style: none;
-    text-align: start;
+    text-align: center;
     transition: .1s;
     font-size: 1em;
-    padding-left: 20%;
 }
 .main-menu ul li:hover{
     transform: scale(1.75);
