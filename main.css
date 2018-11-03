@@ -91,9 +91,10 @@ body::-webkit-scrollbar{
 }
 .main-menu ul li{
     list-style: none;
-    text-align: center;
+    text-align: start;
     transition: .1s;
-    font-size: .75em;
+    font-size: 1em;
+    padding-left: 20%;
 }
 .main-menu ul li:hover{
     transform: scale(1.75);
@@ -112,7 +113,7 @@ body::-webkit-scrollbar{
 .main-menu ul h2{
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 1em;
+    font-size: 1.25em;
     transition: .15s;
 }
 .main-menu ul h2:hover{
@@ -151,6 +152,27 @@ body::-webkit-scrollbar{
     display: flex;
     flex: 1;
 }
+.main-page-title{
+    font-size: 3em;
+    margin-bottom: 10%;    
+}
+.main-page-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 12.5%;
+}
+.main-page-menu-items h1{
+    font-size: 2em;
+}
+.main-page-menu-items ul{
+    list-style-type: none;
+    padding-left: 20%;
+}
+.main-page-menu-items ul li{
+    text-align: start;
+    font-size: 1.25em;
+}
 /* Info Block */
 .information-block{
     flex-direction: column;
@@ -166,4 +188,6 @@ body::-webkit-scrollbar{
     display: inherit;
     background-color: rgba(0, 0, 0, 0.3);
     flex-shrink: 3;
+    padding-left: 10%;
+    padding-right: 10%;
 }
