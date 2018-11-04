@@ -111,28 +111,28 @@ body::-webkit-scrollbar{
 .main-menu ul li a{
     text-decoration: none;
     color: black;
-    transition: .25s;
+    transition: .5s;
 }
 .main-menu ul li a:hover{
-    color:rgba(107,122,143);
-    transition: .25s;
+    color:white;
+    transition: .5s;
 }
 .main-menu ul h2{
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 1.25em;
-    transition: .15s;
+    font-size: 1.4em;
+    transition: .5s;
 }
 .main-menu ul h2:hover{
     transform: scale(1.25);
-    transition: .15s;
+    transition: .5s;
 }
 .main-menu ul h2 a{
     text-decoration: none;
     color: rgb(247,136,47);
 }
 .main-menu ul h2 a:hover{
-    color: rgb(107,122,143);
+    color: white;
 }
 /* End menu */
 /* to top navigatop */
