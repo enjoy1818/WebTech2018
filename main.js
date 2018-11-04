@@ -8,22 +8,32 @@ function showHide(){
         state.style.display = "none";
     }
 };
-function loadDoc(file){
+function loadDoc(file, menu){
     // Using this function to load a file and render in html without refreshing eg.'loadDoc('file_name.extension')'
-    var httpReq = new XMLHttpRequest();
-    httpReq.onreadystatechange = function(){
+    var httpReq1 = new XMLHttpRequest();
+    httpReq1.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
-            document.getElementById("info-block").innerHTML = httpReq.responseText;
+            document.getElementById("info-block").innerHTML = httpReq1.responseText;
             fadeIn("info-block", 1500);
         }
     };
-    httpReq.open("GET", file, true);
-    httpReq.send();
+    httpReq1.open("GET", file, true);
+    httpReq1.send();
     document.getElementById("dropdown").style.display = "none";
     document.getElementById("info-block").style.paddingLeft = "7.5%";
-    document.getElementById("menu").style.width = "10%";
+    
+    var httpReq12 = new XMLHttpRequest();
+    httpReq12.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            document.getElementById("menu").innerHTML = httpReq12.responseText;
+        }
+    };
+    httpReq12.open("GET", menu, true);
+    httpReq12.send();
     document.getElementById("menu").style.display = "flex";
+    document.getElementById("menu").style.width = "10%";
 };
+
 function toTop(){
     document.getElementById("header").scrollIntoView();
 };

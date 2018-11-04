@@ -239,6 +239,9 @@ body::-webkit-scrollbar{
     position: fixed;
     padding-left:1.25%;
 }
+.disabled{
+    display: none;
+}
 #menu{
     display: none;
 }
