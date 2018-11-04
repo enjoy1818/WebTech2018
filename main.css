@@ -245,6 +245,7 @@ body::-webkit-scrollbar{
 }
 .side-menu h3{
     padding-left: .25em;
+    text-align: start;
 }
 .side-menu ul{
     padding: none;

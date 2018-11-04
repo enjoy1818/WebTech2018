@@ -25,6 +25,7 @@ function loadDoc(file, menu){
     var httpReq12 = new XMLHttpRequest();
     httpReq12.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
+            document.getElementById("menu").innerHTML = "<h3>Quick guide</h3>";
             document.getElementById("menu").innerHTML += httpReq12.responseText;
         }
     };
