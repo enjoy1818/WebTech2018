@@ -44,6 +44,7 @@ body::-webkit-scrollbar{
     width: 17.5%;
     transition: .5s;
     margin-left: 50%;
+    filter: invert(100%);
 }
 .navbar-menu img:hover{
     transform: scale(1.75);
@@ -66,7 +67,7 @@ body::-webkit-scrollbar{
 }
 .navbar-logo a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .navbar-logo h1:hover{
     transform: scale(1.25, 1.25);
@@ -112,7 +113,7 @@ body::-webkit-scrollbar{
     transition: .25s;
 }
 .main-menu ul li a:hover{
-    color:rgb(36, 36, 168);
+    color:rgba(36, 36, 168, 0.95);
     transition: .25s;
 }
 .main-menu ul h2{
@@ -130,7 +131,7 @@ body::-webkit-scrollbar{
     color: black;
 }
 .main-menu ul h2 a:hover{
-    color: rgb(66, 66, 215);
+    color: rgba(36, 36, 168, 1);
 }
 /* End menu */
 /* to top navigatop */
@@ -156,6 +157,7 @@ body::-webkit-scrollbar{
 .main-page{
     display: flex;
     flex: 1;
+    justify-content: space-between
 }
 .main-page-title{
     font-size: 3em;
@@ -173,7 +175,18 @@ body::-webkit-scrollbar{
     border-bottom: 0.05em;
     border-bottom-style: solid;
     border-bottom-color: grey;
-
+    transition: 0.5s;
+}
+.main-page-menu-items h1 a{
+    text-decoration: none;
+    color: black;
+}
+.main-page-menu-items h1:hover{
+    transform: scale(1.25);
+    transition: 0.5s;
+}
+.main-page-menu-items h1 a:hover{
+    color: rgba(255, 69, 0, .875);
 }
 .main-page-menu-items{
     flex-direction: column;
@@ -185,12 +198,20 @@ body::-webkit-scrollbar{
 .main-page-menu-items ul li{
     text-align: start;
     font-size: 1.25em;
+    transition: 0.5s;
+}
+.main-page-menu-items ul li:hover{
+    transform: scale(1.25);
+    transition: 0.5s;
+}
+.main-page-menu-items ul li a{
+    text-decoration: none;
+    color: black;
 }
 /* Info Block */
 .information-block{
     flex-direction: column;
     text-align: center;
-    padding-left: 10%;
     padding-right: 10%;
 }
 .information-block-title{
