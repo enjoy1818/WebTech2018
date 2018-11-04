@@ -30,7 +30,7 @@ body::-webkit-scrollbar{
 .navbar{
     flex-direction: row;
     min-height: 25%;
-    background-color: rgba(255, 69, 0);
+    background-color: rgb(247,136,47);
     justify-items: baseline;
     box-shadow: 0px 1px 2em rgba(0, 0, 0, 0.3);
 }
@@ -76,7 +76,7 @@ body::-webkit-scrollbar{
 /* End navbar */
 /*Main Menu */
 .main-menu{
-    background-color: rgba(255, 69, 0, .875);
+    background-color: rgba(107,122,143, .9);
     display: none;
     flex-direction: column;
     font-size: 1.25em;
@@ -113,7 +113,7 @@ body::-webkit-scrollbar{
     transition: .25s;
 }
 .main-menu ul li a:hover{
-    color:rgba(36, 36, 168, 0.95);
+    color:rgba(107,122,143);
     transition: .25s;
 }
 .main-menu ul h2{
@@ -128,10 +128,10 @@ body::-webkit-scrollbar{
 }
 .main-menu ul h2 a{
     text-decoration: none;
-    color: black;
+    color: rgb(247,136,47);
 }
 .main-menu ul h2 a:hover{
-    color: rgba(36, 36, 168, 1);
+    color: rgb(107,122,143);
 }
 /* End menu */
 /* to top navigatop */
@@ -156,8 +156,8 @@ body::-webkit-scrollbar{
 /* Main page */
 .main-page{
     display: flex;
-    flex: 1;
-    justify-content: space-between
+    flex-direction: row;
+    justify-content: space-between;
 }
 .main-page-title{
     font-size: 3em;
@@ -208,12 +208,18 @@ body::-webkit-scrollbar{
     text-decoration: none;
     color: black;
 }
+.main-page-menu-items ul li a:hover{
+    color: 
+}
 /* Info Block */
 .information-block{
+    display: flex;
     flex-direction: column;
+    width: 90%;
+    justify-content: baseline;
     text-align: center;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 .information-block-title{
     font-size: 2em;
@@ -225,4 +231,14 @@ body::-webkit-scrollbar{
     flex-shrink: 3;
     padding-left: 10%;
     padding-right: 10%;
+}
+/* side menu */
+.side-menu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding-left:1.25%;
+}
+#menu{
+    display: none;
 }
