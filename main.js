@@ -2,7 +2,7 @@
 function showHide(){
     var state = document.getElementById("dropdown");
     if(state.style.display == "none"){
-        state.style.display = "flex";
+        state.style.display = "inline-flex";
         fadeIn("dropdown", 1000);
     }else{
         state.style.display = "none";
@@ -14,6 +14,7 @@ function loadDoc(file){
     httpReq.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
             document.getElementById("info-block").innerHTML = httpReq.responseText;
+            fadeIn("info-block", 1500);
         }
     };
     httpReq.open("GET", file, true);
