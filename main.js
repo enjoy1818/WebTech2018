@@ -20,6 +20,7 @@ function loadDoc(file){
     httpReq.open("GET", file, true);
     httpReq.send();
     document.getElementById("dropdown").style.display = "none";
+    document.getElementById("info-block").style.paddingLeft = 0;
 };
 function toTop(){
     document.getElementById("header").scrollIntoView();
@@ -37,3 +38,4 @@ function fadeIn(id, time){
   };
   tick();
 };
+

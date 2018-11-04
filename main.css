@@ -213,6 +213,7 @@ body::-webkit-scrollbar{
     flex-direction: column;
     text-align: center;
     padding-right: 10%;
+    padding-left: 10%;
 }
 .information-block-title{
     font-size: 2em;
