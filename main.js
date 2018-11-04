@@ -3,7 +3,7 @@ function showHide(){
     var state = document.getElementById("dropdown");
     if(state.style.display == "none"){
         state.style.display = "inline-flex";
-        fadeIn("dropdown", 1000);
+        fadeIn("dropdown", 250);
     }else{
         state.style.display = "none";
     }
@@ -20,6 +20,9 @@ function loadDoc(file){
     httpReq.open("GET", file, true);
     httpReq.send();
     document.getElementById("dropdown").style.display = "none";
+    document.getElementById("info-block").style.paddingLeft = "7.5%";
+    document.getElementById("menu").style.width = "10%";
+    document.getElementById("menu").style.display = "flex";
 };
 function toTop(){
     document.getElementById("header").scrollIntoView();
@@ -37,3 +40,9 @@ function fadeIn(id, time){
   };
   tick();
 };
+
+function removeElement(elementId, elementRem) {
+    // Removes an element from the document
+    var element = document.getElementById(elementId);
+    element.parentNode.removeChild(elementRem);
+}
