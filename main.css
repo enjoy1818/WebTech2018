@@ -210,7 +210,7 @@ body::-webkit-scrollbar{
     color: black;
 }
 .main-page-menu-items ul li a:hover{
-    color: 
+    color: black;
 }
 /* Info Block */
 .information-block{
@@ -223,6 +223,15 @@ body::-webkit-scrollbar{
     padding-left: 5%;
     padding-top: 5%;
     overflow: auto;
+}
+.information-block::-webkit-scrollbar{
+    width: 20px;
+}
+.information-block::-webkit-scrollbar-track{
+ display: none;
+}
+.information-block::-webkit-scrollbar-thumb{
+    background: rgb(247,136,47);
 }
 .information-block-title{
     font-size: 2em;
@@ -242,7 +251,7 @@ body::-webkit-scrollbar{
     border-right: 0.125em;
     border-right-color: black;
     border-right-style: solid;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 .side-menu h3{
     padding-left: .25em;

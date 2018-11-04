@@ -33,7 +33,7 @@ function loadDoc(file, menu){
     httpReq12.open("GET", menu, true);
     httpReq12.send();
     document.getElementById("menu").style.display = "flex";
-    document.getElementById("menu").style.width = "25%";
+    document.getElementById("menu").style.width = "15%";
 };
 
 function toTop(){
