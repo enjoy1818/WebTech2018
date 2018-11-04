@@ -21,6 +21,7 @@ function loadDoc(file, menu){
     httpReq1.send();
     document.getElementById("dropdown").style.display = "none";
     document.getElementById("info-block").style.paddingLeft = "7.5%";
+    document.getElementById("info-block").style.height = (screen.height*70)/100 + "px";
     
     var httpReq12 = new XMLHttpRequest();
     httpReq12.onreadystatechange = function(){
