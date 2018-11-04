@@ -14,6 +14,7 @@ function loadDoc(file){
     httpReq.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
             document.getElementById("info-block").innerHTML = httpReq.responseText;
+            fadeIn("info-block", 1500);
         }
     };
     httpReq.open("GET", file, true);
