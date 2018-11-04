@@ -15,3 +15,10 @@
 .content-inner{
     font-size: 1.2em;
 }
+ul{
+    padding: 0.5em;
+}
+li{
+    list-style-type: none;
+    font-size: 1.2em;
+}

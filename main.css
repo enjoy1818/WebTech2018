@@ -237,7 +237,9 @@ body::-webkit-scrollbar{
     display: flex;
     flex-direction: column;
     position: fixed;
-    padding-left:1.25%;
+}
+.side-menu ul{
+    padding: none;
 }
 .disabled{
     display: none;
