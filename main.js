@@ -25,13 +25,13 @@ function loadDoc(file, menu){
     var httpReq12 = new XMLHttpRequest();
     httpReq12.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
-            document.getElementById("menu").innerHTML = httpReq12.responseText;
+            document.getElementById("menu").innerHTML += httpReq12.responseText;
         }
     };
     httpReq12.open("GET", menu, true);
     httpReq12.send();
     document.getElementById("menu").style.display = "flex";
-    document.getElementById("menu").style.width = "10%";
+    document.getElementById("menu").style.width = "25%";
 };
 
 function toTop(){
