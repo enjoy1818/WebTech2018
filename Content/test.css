@@ -1,5 +1,5 @@
 #content-header{
-    color: red; 
+    color: rgb(68,132,206); 
     font-size: 4em;
 }
 .content-sub_header{
@@ -26,5 +26,9 @@ li{
     width: 50%;
     height: 50%;
     align-self: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
