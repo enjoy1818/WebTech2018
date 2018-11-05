@@ -22,3 +22,9 @@ li{
     list-style-type: none;
     font-size: 1.2em;
 }
+#arr-img{
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    margin-bottom: 10%;
+}

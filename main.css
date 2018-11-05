@@ -173,24 +173,29 @@ body::-webkit-scrollbar{
 }
 .main-page-menu-items h1{
     font-size: 2em;
-    border-bottom: 0.05em;
-    border-bottom-style: solid;
-    border-bottom-color: grey;
     transition: 0.5s;
+}.main-page-menu-items hr{
+    color: red;
 }
 .main-page-menu-items h1 a{
     text-decoration: none;
-    color: black;
+    color: rgb(68,132,206);
 }
 .main-page-menu-items h1:hover{
     transform: scale(1.25);
     transition: 0.5s;
 }
 .main-page-menu-items h1 a:hover{
-    color: rgba(255, 69, 0, .875);
+    color: rgb(68,132,206);
 }
 .main-page-menu-items{
     flex-direction: column;
+    width: 45%;
+    border: 0.2em;
+    border-style: solid;
+    border-color: rgba(107,122,143, 1);
+    height: 100%;
+    box-shadow: -1.25em 1.25em 0px 0.5em rgba(247,195,55, .75);
 }
 .main-page-menu-items ul{
     list-style-type: none;
@@ -202,7 +207,7 @@ body::-webkit-scrollbar{
     transition: 0.5s;
 }
 .main-page-menu-items ul li:hover{
-    transform: scale(1.25);
+    transform: scale(1.125);
     transition: 0.5s;
 }
 .main-page-menu-items ul li a{
@@ -268,4 +273,7 @@ body::-webkit-scrollbar{
 }
 #menu{
     display: none;
+}
+.invisible{
+    visibility: hidden;
 }
