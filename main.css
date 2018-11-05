@@ -67,7 +67,7 @@ body::-webkit-scrollbar{
 }
 .navbar-logo a{
     text-decoration: none;
-    color: white;
+    color: aliceblue;
 }
 .navbar-logo h1:hover{
     transform: scale(1.25, 1.25);
@@ -162,7 +162,7 @@ body::-webkit-scrollbar{
 }
 .main-page-title{
     font-size: 3em;
-    margin-bottom: 10%;    
+    margin-bottom: 10%;
 }
 .main-page-menu{
     display: flex;
@@ -244,7 +244,7 @@ body::-webkit-scrollbar{
 /* footer */
 .footer{
     display: inherit;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgb(220,199,170);
     flex-shrink: 3;
     padding-left: 10%;
     padding-right: 10%;
