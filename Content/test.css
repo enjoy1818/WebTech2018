@@ -1,4 +1,4 @@
-#content-header{
+.content-header{
     color: rgb(68,132,206); 
     font-size: 4em;
 }
@@ -16,11 +16,13 @@
     font-size: 1.2em;
 }
 ul{
-    padding: 0.5em;
+    padding-right: 0.5em;
 }
 li{
     list-style-type: none;
     font-size: 1.2em;
+    transition: 0.25s;
+    margin-top: 1.25%;
 }
 #arr-img{
     width: 50%;
@@ -31,4 +33,13 @@ li{
 a{
     text-decoration: none;
     color: black;
+    transition: 0.25s;
+}
+a:hover{
+    color: rgb(68,132,206);
+    transition: .25s;
+}
+li:hover{
+    transition: .25s;
+    transform: scale(1.15);
 }

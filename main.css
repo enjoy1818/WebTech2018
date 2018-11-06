@@ -256,10 +256,10 @@ body::-webkit-scrollbar{
     border-right: 0.125em;
     border-right-color: black;
     border-right-style: solid;
-    padding-left: 5%;
+    padding-left: 2.5%;
 }
 .side-menu h3{
-    padding-left: .25em;
+    padding-left: .125em;
     text-align: start;
 }
 .side-menu ul{
@@ -276,4 +276,7 @@ body::-webkit-scrollbar{
 }
 .invisible{
     visibility: hidden;
+}
+.activate{
+    color: red;
 }
