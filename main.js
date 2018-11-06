@@ -21,6 +21,7 @@ function loadDoc(file, menu){
     httpReq1.send();
     document.getElementById("dropdown").style.display = "none";
     document.getElementById("info-block").style.paddingLeft = "7.5%";
+    document.getElementById("info-block").style.height = (screen.height*80)/100 + "px";
     
     var httpReq12 = new XMLHttpRequest();
     httpReq12.onreadystatechange = function(){
@@ -32,7 +33,8 @@ function loadDoc(file, menu){
     httpReq12.open("GET", menu, true);
     httpReq12.send();
     document.getElementById("menu").style.display = "flex";
-    document.getElementById("menu").style.width = "25%";
+    document.getElementById("menu").style.width = "15%";
+    document.getElementById("chevron-up").style.display = 'none';
 };
 
 function toTop(){

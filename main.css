@@ -1,9 +1,9 @@
-html{
-    scroll-behavior: smooth;
-}
 .container{
     display: flex;
     flex-direction: column;
+}
+*{
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Kanit', sans-serif;
@@ -67,7 +67,7 @@ body::-webkit-scrollbar{
 }
 .navbar-logo a{
     text-decoration: none;
-    color: white;
+    color: aliceblue;
 }
 .navbar-logo h1:hover{
     transform: scale(1.25, 1.25);
@@ -76,7 +76,7 @@ body::-webkit-scrollbar{
 /* End navbar */
 /*Main Menu */
 .main-menu{
-    background-color: rgba(107,122,143, .9);
+    background-color: rgba(107,122,143, 1);
     display: none;
     flex-direction: column;
     font-size: 1.25em;
@@ -84,6 +84,7 @@ body::-webkit-scrollbar{
     opacity: 0.5;
     margin-bottom: -28%;
     z-index: 111;
+    overflow-y: scroll;
 }
 .main-menu :only-child{
     z-index: inherit;
@@ -110,28 +111,28 @@ body::-webkit-scrollbar{
 .main-menu ul li a{
     text-decoration: none;
     color: black;
-    transition: .25s;
+    transition: .5s;
 }
 .main-menu ul li a:hover{
-    color:rgba(107,122,143);
-    transition: .25s;
+    color:white;
+    transition: .5s;
 }
 .main-menu ul h2{
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 1.25em;
-    transition: .15s;
+    font-size: 1.4em;
+    transition: .5s;
 }
 .main-menu ul h2:hover{
     transform: scale(1.25);
-    transition: .15s;
+    transition: .5s;
 }
 .main-menu ul h2 a{
     text-decoration: none;
     color: rgb(247,136,47);
 }
 .main-menu ul h2 a:hover{
-    color: rgb(107,122,143);
+    color: white;
 }
 /* End menu */
 /* to top navigatop */
@@ -161,7 +162,7 @@ body::-webkit-scrollbar{
 }
 .main-page-title{
     font-size: 3em;
-    margin-bottom: 10%;    
+    margin-bottom: 10%;
 }
 .main-page-menu{
     display: flex;
@@ -172,24 +173,29 @@ body::-webkit-scrollbar{
 }
 .main-page-menu-items h1{
     font-size: 2em;
-    border-bottom: 0.05em;
-    border-bottom-style: solid;
-    border-bottom-color: grey;
     transition: 0.5s;
+}.main-page-menu-items hr{
+    color: red;
 }
 .main-page-menu-items h1 a{
     text-decoration: none;
-    color: black;
+    color: rgb(68,132,206);
 }
 .main-page-menu-items h1:hover{
     transform: scale(1.25);
     transition: 0.5s;
 }
 .main-page-menu-items h1 a:hover{
-    color: rgba(255, 69, 0, .875);
+    color: rgb(68,132,206);
 }
 .main-page-menu-items{
     flex-direction: column;
+    width: 45%;
+    border: 0.2em;
+    border-style: solid;
+    border-color: rgba(107,122,143, 1);
+    height: 100%;
+    box-shadow: -1.25em 1.25em 0px 0.5em rgba(247,195,55, .75);
 }
 .main-page-menu-items ul{
     list-style-type: none;
@@ -201,7 +207,7 @@ body::-webkit-scrollbar{
     transition: 0.5s;
 }
 .main-page-menu-items ul li:hover{
-    transform: scale(1.25);
+    transform: scale(1.125);
     transition: 0.5s;
 }
 .main-page-menu-items ul li a{
@@ -209,7 +215,7 @@ body::-webkit-scrollbar{
     color: black;
 }
 .main-page-menu-items ul li a:hover{
-    color: 
+    color: black;
 }
 /* Info Block */
 .information-block{
@@ -221,6 +227,16 @@ body::-webkit-scrollbar{
     padding-right: 5%;
     padding-left: 5%;
     padding-top: 5%;
+    overflow: auto;
+}
+.information-block::-webkit-scrollbar{
+    width: 20px;
+}
+.information-block::-webkit-scrollbar-track{
+ display: none;
+}
+.information-block::-webkit-scrollbar-thumb{
+    background: rgb(247,136,47);
 }
 .information-block-title{
     font-size: 2em;
@@ -228,7 +244,7 @@ body::-webkit-scrollbar{
 /* footer */
 .footer{
     display: inherit;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgb(220,199,170);
     flex-shrink: 3;
     padding-left: 10%;
     padding-right: 10%;
@@ -237,11 +253,10 @@ body::-webkit-scrollbar{
 .side-menu{
     display: flex;
     flex-direction: column;
-    padding-top: 25%;
     border-right: 0.125em;
     border-right-color: black;
     border-right-style: solid;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 .side-menu h3{
     padding-left: .25em;
@@ -258,4 +273,7 @@ body::-webkit-scrollbar{
 }
 #menu{
     display: none;
+}
+.invisible{
+    visibility: hidden;
 }
