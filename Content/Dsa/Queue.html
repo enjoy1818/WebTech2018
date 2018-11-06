@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="./Content/test.css">
+<h1 id="content-header">Queues</h1>
+<h2 class="content-sub_header">คิว</h2>
+
+<p class="content-inner">
+    <b>คิว</b> เป็นโครงสร้างข้อมูลแบบ Linear List ประเภทหนึ่ง <br>
+    โดยที่ คิวจะเพิ่มข้อมูลได้ที่ส่วนท้าย(rear)ของคิว <br>
+    และจะลบข้อมูลได้ที่ส่วนหัว(front)ของคิวเท่านั้น <br>
+    คิวมีโครงสร้างเป็นแบบ<b>เข้าก่อน ออกก่อน (FIFO : First In First Out)</b> <br>
+</p>
+
+<h3 class="h3-header">การดำเนินการพื้นฐานของคิว</h3>
+<p class="content-inner">
+    คิวมีการดำเนินงานพื้นฐานอยู่ 4 อย่าง คือ <br>
+    1. <b>Enqueue</b> <br>
+    2. <b>Dequeue</b> <br>
+    3. <b>Queue Front</b> <br>
+    4. <b>Queue Rear</b> <br>
+</p>
+
+<h3 class="h3-header">Basic Operation : Enqueue</h3>
+<p class="content-inner">
+    Enqueue เป็นการเพิ่มข้อมูลเข้าที่ส่วนท้าย(rear)ของคิว <br>
+    ทำให้ข้อมูลนั้นอยู่ที่ตำแหน่งสุดท้ายของคิว <br>
+    <br>
+    ปัญหา : <b>ถ้าคิวเต็ม การเพิ่มข้อมูลลงไปจะทำให้เกิดสถานะ Overflow</b>
+</p>
+
+<h3 class="h3-header">Basic Operation : Dequeue</h3>
+<p class="content-inner">
+    Dequeue เป็นการลบข้อมูลออกจากคิวที่ส่วนหัวของคิว <br>
+    แล้วคืนค่าข้อมูลนั้น ทำให้ข้อมูลถัดไปอยู่ที่ตำแหน่งหัวคิวแทน <br>
+    <br>
+    ปัญหา : <b>ถ้าคิวว่าง การลบข้อมูลออกจะทำให้เกิดสถานะ Underflow</b>
+</p>
+
+<h3 class="h3-header">Basic Operation : Queue Front</h3>
+<p class="content-inner">
+    Queue Front เป็นการส่งค่าข้อมูลที่ตำแหน่งหัวคิวออกมา โดยที่ไม่ได้ลบข้อมูลนั้น  <br>
+    <br>
+    ปัญหา : <b>ถ้าคิวว่าง การพยายามดึงข้อมูลที่ตำแหน่งหัวคิวจะทำให้เกิดสถานะ Underflow</b>
+</p>
+
+<h3 class="h3-header">Basic Operation : Queue Rear</h3>
+<p class="content-inner">
+    Queue Rear เป็นการส่งค่าข้อมูลที่ตำแหน่งท้ายคิวออกมา โดยที่ไม่ได้ลบข้อมูลนั้น <br>
+    <br>
+    ปัญหา : <b>ถ้าคิวว่าง การพยายามดึงข้อมูลที่ตำแหน่งท้ายคิวจะทำให้เกิดสถานะ Underflow</b>
+</p>

@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="./Content/test.css">
+<h1 id="content-header">Stacks</h1>
+<h2 class="content-sub_header">สแต็ค</h2>
+
+<p class="content-inner">
+    <b>สแต็ค</b> เป็นโครงสร้างข้อมูลแบบ Linear List ประเภทหนึ่ง <br>
+    โดยที่สแต็คจะเพิ่มหรือลบข้อมูลได้จากด้านบนสุด(top)ของสแต็คเท่านั้น <br>
+    สแต็คมีโครงสร้างเป็นแบบ<b>เข้าทีหลัง ออกก่อน (LIFO : Last In First Out)</b>   <br>
+</p>
+
+<h3 class="h3-header">การดำเนินการพื้นฐานของสแต็ค</h3>
+<p class="content-inner">
+    สแต็คมีการดำเนินการพื้นฐานอยู่ 3 อย่าง คือ <br>
+    1. <b>Push</b> <br>
+    2. <b>Pop</b> <br>
+    3. <b>Stack Top</b> <br>
+</p>
+
+<h3 class="h3-header">Basic Operation : Push</h3>
+<p class="content-inner">
+    Push เป็นการเพิ่มข้อมูลเข้าไปที่ส่วน top ของ stack ข้อมูลที่เพิ่มเข้าไป <br>
+    ก็จะอยู่ตำแหน่ง top ของ stack แทนข้อมูลก่อนหน้าที่ถูกดันลงไป <br>
+    <br>
+    ปัญหา : <b>ถ้าสแต็คเต็ม การเพิ่มข้อมูลลงไปจะทำให้เกิด Overflow</b>
+</p>
+
+<h3 class="h3-header">Basic Operation : Pop</h3>
+<p class="content-inner">
+    Pop เป็นการลบข้อมูลที่อยู่ที่ตำแหน่ง top ของ stack แล้วคืนค่าข้อมูลนั้น <br>
+    ทำให้ข้อมูลก่อนหน้าจะอยู่ตำแหน่ง top ของ stack แทน <br>
+    <br>
+    ปัญหา : <b>ถ้าไม่มีข้อมูลหรือสแต็คว่าง การลบข้อมูลจะทำให้เกิดสถานะ Underflow</b> <br>
+</p>
+
+<h3 class="h3-header">Basic Operation : Stack Top</h3>
+<p class="content-inner">
+    คืนค่าข้อมูล ณ ตำแหน่ง top ของสแต็ค แต่ไม่ได้ลบข้อมูลนั้น <br>
+    <br>
+    ปัญหา : <b>ถ้าสแต็คว่าง การดึงข้อมูลที่ตำแหน่ง top จะทำให้เกิดสถานะ Underflow</b> <br>
+</p>
