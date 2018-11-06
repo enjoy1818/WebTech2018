@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="./Content/test.css">
+<h1 id="content-header">Tree</h1>
+<h2 class="content-sub_header">โครงสร้างแบบต้นไม้</h2>
+
+<p class="content-inner">
+    โครงสร้างแบบต้นไม้ เป็นโครงสร้างข้อมูลที่ประกอบด้วย 2 ส่วน คือ <br>
+    1. <b>โหนด (Node)</b> เป็นกลุ่มข้อมูลในโครงสร้างต้นไม้ <br>
+    2. <b>กิ่ง (Branch)</b> เป็นส่วนที่ใช้เชื่อมโหนดต่างๆในโครงสร้างต้นไม้ <br>
+</p>
+
+<h3 class="h3-header">คำศัพท์ที่เกี่ยวกับโครงสร้างต้นไม้</h3>
+<p class="content-inner">
+    <b>Root</b> : โหนดแรกสุดของต้นไม้ <br>
+    <b>Parent</b> : โหนดที่อยู่สูงกว่าโหนดที่พิจารณา 1 ระดับ <br>
+    <b>Child</b> : โหนดที่อยู่ต่ำกว่าโหนดที่พิจารณา 1 ระดับ <br>
+    <b>Sibling</b> : โหนดที่อยู่ระดับเดียวกันและมีพ่อเดียวกัน <br>
+    <b>Leaf</b> : โหนดที่ไม่มีลูก <br>
+    <b>Ancestor</b> : โหนดที่อยู่ในเส้นทางการเดินจากรูทมายังโหนดที่พิจารณา <br>
+    <b>Descendent</b> : โหนดที่อยู่ในเส้นทางการเดินจากโหนดที่พิจารณา ไปจนหมดต้นไม้ <br>
+    <b>Degree</b> : จ่านวนลูกของโหนดที่พิจารณา <br>
+    <b>Level</b> : ระยะทางจากรูทมายังโหนดที่พิจารณา <br>
+    <b>Depth</b> : ความสูงของต้นไม้ (= Level ของโหนดที่อยู่ห่างจากรูทมากที่สุด + 1) <br>
+    <b>Subtree</b> : ต้นไม้ย่อย <br>
+</p>
+
+<h3 class="h3-header">ต้นไม้แบบไบนารี(Binary Trees)</h3>
+<p class="content-inner">
+    Binary Tree เป็นโครงสร้างต้นไม้ ที่แต่ละโหนดจะมีโหนดลูกได้ไม่เกิน 2 ต้นไม้ย่อย <br>
+    <b>ถ้าต้นไม้มีทั้งหมด N โหนด</b> : Depth สูงสุดจะเท่ากับ N , Depth น้อยสุดจะเท่ากับ log ฐาน 2 ของ N + 1 <br>
+    <b>ถ้าต้นไม้มีความสูง D</b> : จำนวนโหนดน้อยสุดจะเท่ากับ D , จำนวนโหนดมากสุดจะเท่ากับ D**2 - 1 <br>
+</p>
+
+<h3 class="h3-header">Complete and Nearly Complete Trees</h3>
+<p class="content-inner">
+    Complete Trees : มีจำนวนโหนดสูงสุด เมื่อมีความสูง D <br>
+    Nearly Complete Trees : มีความสูงน้อยสุด เมื่อมีโหนด N โหนด <br>
+</p>
+
+<h2 class="content-sub_header">Binary Tree Traversals</h2>
+<p class="content-inner">
+    <b>Depth-first traversal</b> : เริ่มท่องจากรูท ไปใน descendent ของลูกตัวแรกจนหมด ค่อยไปท่องในลูกตัวถัดไป <br>
+    <b>Breadth-first traversal</b> : เริ่มท่องจากรูทแบบแนวกว้าง ไปยังลูกทุกตัวก่อน แล้วค่อยท่องไปที่ระดับลูกของลูกไปเรื่อยๆ <br>
+</p>
+
+้<h3 class="h3-header">Depth-first Traversals</h3>
+<p class="content-inner">
+    Depth-first Traversals สามารถทำได้ 3 วิธี คือ
+    1. <b>Preorder traversal</b> : ท่องไปตามลำดับ root -> left subtree -> right subtree <br>
+    2. <b>Inorder traversal</b> : ท่องไปตามลำดับ left subtree -> root -> right subtree <br>
+    3. <b>Postorder traversal</b> : ท่องไปตามลำดับ left subtree -> right subtree -> root <br>
+</p>
+
+้<h3 class="h3-header">Breadth-first Traversal</h3>
+<p class="content-inner">
+    Breadth-first traversal คือการท่องเข้าไปใน tree โดยเริ่มจาก <br>
+    level ที่ต่ำสุดไล่ลงไปถึง level สูงสุด โดยใน level เดียวกันจะไล่จากซ้ายไปขวา <br>
+</p>
+
