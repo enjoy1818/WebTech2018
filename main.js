@@ -8,7 +8,7 @@ function showHide(){
         state.style.display = "none";
     }
 };
-function loadDoc(file, menu, content){
+function loadDoc(file, menu, activateId){
     // Using this function to load a file and render in html without refreshing eg.'loadDoc('file_name.extension')'
     document.getElementById("info-block").innerHTML = "";
     var httpReq1 = new XMLHttpRequest();
@@ -19,35 +19,15 @@ function loadDoc(file, menu, content){
     };
     httpReq1.open("GET", file, true);
     httpReq1.send();
-
-    var httpReq12 = new XMLHttpRequest();
-    httpReq12.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200){
-            document.getElementById("info-block").innerHTML += httpReq12.responseText;
-        }
-    };
-    httpReq12.open("GET", "./Content/Dsa/datatypes.html", true);
-    httpReq12.send();
-
-    var httpReq13 = new XMLHttpRequest();
-    httpReq13.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200){
-            document.getElementById("info-block").innerHTML += httpReq13.responseText;
-        }
-    };
-    httpReq13.open("GET", "./Content/Dsa/datastructure.html", true);
-    httpReq13.send();
-    
     var httpReq11 = new XMLHttpRequest();
     httpReq11.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
-            document.getElementById("menu").innerHTML = "<h3>Quick guide</h3>";
+            document.getElementById("menu").innerHTML = "<h3>Category</h3>";
             document.getElementById("menu").innerHTML += httpReq11.responseText;
         }
     };
     httpReq11.open("GET", menu, true);
     httpReq11.send();
-
     document.getElementById("dropdown").style.display = "none";
     document.getElementById("info-block").style.paddingLeft = "7.5%";
     document.getElementById("info-block").style.height = (screen.height*80)/100 + "px";
@@ -75,4 +55,7 @@ function fadeIn(id, time){
 
 function scrollToElement(elementId) {
     document.getElementById(elementId).scrollIntoView();
+}
+function activate(elementId){
+    document.getElementById(elementId);
 }
