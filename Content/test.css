@@ -59,3 +59,26 @@ li:hover{
     align-self: center;
     margin-top: 5%;
 }
+#pseudo_createlist{
+    width: 50%;
+    align-self: center;
+    margin-top: 3%;
+}
+
+#doubly-img{
+    width: 70%;
+    align-self: center;
+    margin-top: 3%;
+}
+
+#doubly-insertion{
+    width: 70%;
+    align-self: center;
+    margin-top: 3%;
+}
+
+#doubly-deletion{
+    width: 70%;
+    align-self: center;
+    margin-top: 3%;
+}
