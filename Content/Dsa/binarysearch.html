@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="./Content/test.css">
+<h1 class="content-header">Binary search</h1>
+<br>
+<p class="content-inner">
+    <br><img src="./Image/Content/2_binarysearch/0.png" alt="" class="ins-img"><br><br>
+    คือรูปแบบการค้นหาข้อมูลโดยใช้หลัก Divide and Conquer หรือก็คือการแบ่งโดยตัดออกทีละครึ่งๆ จนเจอ แต่ว่าลิสที่จะทำการค้นหาข้อมูลนั้นต้องมีการเรียงข้อมูลอยู่ก่อนแล้วด้วยถึงจะใช้อัลกอลิทึมนี้ได้
+    ข้อมูลที่ต้องการโดยเริ่มต้นจะแบ่งให้ p=0 และ q=จำนวนข้อมูล0-1  และค่าที่จะเทียบเพื่อหาคือช่องที่ mid โดยให้ mid=(p+q)/2  โดยถ้าข้อมูลที่ต้องการมีค่ามากช่องที่ mid ก็จะขยับ p = mid+1  หรือถ้า น้อยกว่า mid จะขยับ q = mid -1 แล้วคำนาณหา mid ใหม่เพื่อเทียบค่า  ลองมาดูตัวอย่างที่ละขั้นตอน  โดยจะทำการหา 20
+    <br><img src="./Image/Content/2_binarysearch/1.png" alt="" class="ins-img"><br><br>
+    ขั้นตอนแรกคือ คำนวณ mid แล้วไปเทียบกับข้อมูลที่ต้องการหา จึงขยับ q = mid-1
+    <br><img src="./Image/Content/2_binarysearch/2.png" alt="" class="ins-img"><br><br>
+    ขั้นตอนที่สอง คือ คำนวณ mid แล้วไปเทียบกับข้อมูลที่ต้องการหา จึงขยับ p = mid+1
+    <br><img src="./Image/Content/2_binarysearch/3.png" alt="" class="ins-img"><br><br>
+    ขั้นตอนที่สาม คือ คำนวณ mid แล้วไปเทียบกับข้อมูลที่ต้องการหา จึงขยับ q = mid-1
+    <br><img src="./Image/Content/2_binarysearch/4.png" alt="" class="ins-img"><br><br>
+    ขั้นตอนที่สี่ คือ คำนวณ mid แล้วก็เทียบกับข้อมูล และเจอค้นหาที่ต้องการพอดี
+    <br><img src="./Image/Content/2_binarysearch/pseudocode.jpg" alt="" class="pseudo-img"><br><br>
+    โดย Binary search มีการทำงานที่อาจจะงงนิดหน่อยแต่ก็สามารถเข้าใจได้ไม่ยาก และมีการเติบโตของฟังก์ชั่น
+    แค่ O(log2 n) ซึ่งถือว่าเร็วมากๆเลยทีเดียวและการเขียนโค้ดของอัลกอลิทึมนี้ก็ไม่ยากอีกด้วย
+
+</p>
+<br><br><br>
+
