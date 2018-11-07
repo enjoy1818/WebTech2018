@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="./Content/test.css">
+<h1 class="content-header">Binary Search Tree</h1>
+<p class="content-inner">
+    Binary Search Tree เป็น Binary Tree ประเภทหนึ่งโดยที่ <br>
+    ทุกโหนดใน left subtree ต้องมีค่าน้อยกว่า root <br>
+    ทุกโหนดใน right subtree ต้องมีค่ามากกว่าหรือเท่ากับ root <br>
+    ในแต่ละ subtree ต้องคงคุณสมบัติของ binary search tree <br>
+</p>
+
+<h2 class="content-sub_header">Search</h2>
+<h3 class="h3-header">Find the Smallest Node</h3>
+<p class="content-inner">
+    การหาค่าที่น้อยที่สุดใน BST สามารถทำได้ด้วยการ<b>ท่องไปในโหนดที่อยู่ทางซ้ายไปเรื่อยๆจนถึงโหนดสุดท้าย</b> <br>
+</p>
+
+<h3 class="h3-header">Find the Largest Node</h3>
+<p class="content-inner">
+    การหาค่าที่มากที่สุดใน BST สามารถทำได้ด้วยการ<b>ท่องไปในโหนดที่อยู่ทางขวาไปเรื่อยๆจนถึงโหนดสุดท้าย</b> <br>
+</p>
+
+<h3 class="h3-header">Searching a Given Node in a BST</h3>
+<p class="content-inner">
+    การหาโหนดที่ต้องการใน BST สามารถทำได้ด้วยการท่องเข้าไปในโหนดจนถึงตัวสุดท้ายอย่างมี<b>เงื่อนไข</b> คือ <br>
+    ถ้าตัวที่ต้องการหามี<b>ค่าน้อยกว่า</b>โหนดปัจจุบันให้ไปดู<b>โหนดด้านซ้าย</b> <br>
+    ถ้าตัวที่ต้องการหามี<b>ค่ามากกว่า</b>โหนดปัจจุบันให้ไปดู<b>โหนดด้านขวา</b> <br>
+</p>
+
+<h2 class="content-sub_header">Insertion</h2>
+<p class="content-inner">
+    เราสามารถแทรกข้อมูลเข้าไปใน BST โดยตามกิ่งไปเรื่อยๆจนเจอ subtree ที่ว่างแล้วแทรกข้อมูลใหม่เข้าไป (แทรกจาก leaf node) <br>
+    <img src="./Image/Content/BinarySearchTree/bst-insert-img.PNG" alt="" id="bst-insert-img"> <br> <br>
+    <img src="./Image/Content/BinarySearchTree/bst-insert-pseudo.PNG" alt="" id="bst-insert-pseudo"> <br> <br>
+</p>
+
+<h2 class="content-sub_header">Deletion</h2>
+<p class="content-inner">
+    การลบข้อมูลจาก BST ต้องทำการค้นหาโหนดที่ต้องการจะลบให้ได้ก่อน ซึ่งโหนดเหล่านั้น แบ่งลักษณะได้เป็น 4 กรณี คือ <br>
+    1. <b>โหนดที่จะลบเป็น leaf node (ไม่มีลูก)</b> <br>
+    ลบได้เลย <br>
+    2. <b>โหนดที่จะลบ มีเพียง Right subtree</b> <br>
+    เปลี่ยนให้พ่อของโหนดนั้นชี้ไปที่ Right subtree แทน แล้วลบโหนดนั้น <br>
+    3. <b>โหนดที่จะลบ มีเพียง Left subtree</b> <br>
+    เปลี่ยนให้พ่อของโหนดนั้นชี้ไปที่ Left subtree แทน แล้วลบโหนดนั้น <br>
+    4. <b>โหนดที่จะลบมีทั้ง Right และ Left subtree</b> <br>
+    คัดลอกข้อมูลมากที่สุดของ Left subtree มาที่โหนดที่จะลบ แล้วลบโหนดมากสุดของ Left subtree แทน <br>
+
+</p>

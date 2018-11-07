@@ -82,8 +82,20 @@ li:hover{
     align-self: center;
     margin-top: 3%;
 }
+
 .ins-gif{
     width: 50%;
     height: 50%;
     align-self: center;
+}
+
+#bst-insert-img{
+    width: 40%;
+    align-self: center;
+    margin-top: 3%;
+}
+#bst-insert-pseudo{
+    width: 50%;
+    align-self: center;
+    margin-top: 3%;
 }
