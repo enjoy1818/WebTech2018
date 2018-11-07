@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="./Content/test.css">
+<h1 class="content-header">AVL Tree</h1>
+<p class="content-inner">
+    <b>AVL Tree</b> เป็น Binary Search Tree ที่มีความสมดุล <br>
+    โดยที่ความสูงของต้นไม้ย่อยข้างซ้ายและขวาต่างกันไม่เกิน 1 ระดับในทุกๆโหนด ซึ่งสามารถกำหนดน้ำหนักความสูงเป็น -1, 0, 1 <br>
+    <b>น้ำหนักความสูง = ความสูงของ Left Subtree - ความสูงของ Right Subtree</b> <br>
+    <img src="./Image/Content/AVLTree/avl-tree-img-1.PNG" alt="" class="avl-tree-img"><br>
+</p>
+
+<h3 class="h3-header">ตัวอย่างของ AVL Tree</h3>
+<p class="content-inner">
+    <img src="./Image/Content/AVLTree/avl-tree-img-2.PNG" alt="" class="avl-tree-img"><br>
+</p>
+
+<h2 class="content-sub_header">Balancing Trees</h2>
+<p class="content-inner">
+    เมื่อแทรกหรือลบโหนดที่ BST อาจเป็นทำให้ BST ไม่สมดุลได้ เมื่อ BST ไม่สมดุลแล้ว เราสามารถปรับสมดุลของ BST ได้โดยการ <br>
+    หมุนโหนดที่มีค่าน้ำหนักไม่เหมาะสม แบ่งเป็น 4 แบบ <br>
+</p>
+
+<h3 class="h3-header">Case 1 : Left to Left</h3>
+<p class="content-inner">
+    <b>หมุนขวา 1 ครั้ง (หมุนโหนด B)</b> <br>
+    โหนด B และ A เบ้ซ้าย (ค่าน้ำหนักเป็นบวกทั้งคู่) <br>
+    <img src="./Image/Content/AVLTree/avl-tree-img-3.PNG" alt="" class="avl-tree-img"><br>
+</p>
+
+<h3 class="h3-header">Case 2 : Right to Right</h3>
+<p class="content-inner">
+    <b>หมุนซ้าย 1 ครั้ง (หมุนโหนด A)</b> <br>
+    โหนด A และ B เบ้ขวา (ค่าน้ำหนักเป็นลบทั้งคู่) <br>
+    <img src="./Image/Content/AVLTree/avl-tree-img-4.PNG" alt="" class="avl-tree-img"><br>
+</p>
+
+<h3 class="h3-header">Case 3 : Right to Left</h3>
+<p class="content-inner">
+    <b>หมุนซ้าย 1 ครั้ง (หมุนโหนด A) หมุนขวา 1 ครั้ง (หมุนโหนด C)</b> <br>
+    โหนด C เบ้ซ้าย และ A เบ้ขวา (ค่าน้ำหนัก C เป็นบวก A เป็นลบ) <br>
+    <img src="./Image/Content/AVLTree/avl-tree-img-5.PNG" alt="" class="avl-tree-img"><br>
+</p>
+
+<h3 class="h3-header">Case 4 : Left to Right</h3>
+<p class="content-inner">
+    <b>หมุนขวา 1 ครั้ง (หมุนโหนด C) หมุนซ้าย 1 ครั้ง (หมุนโหนด A)</b> <br>
+    โหนด A เบ้ขวา และ C เบ้ซ้าย (ค่าน้ำหนัก C เป็นบวก A เป็นลบ) <br>
+    <img src="./Image/Content/AVLTree/avl-tree-img-6.PNG" alt="" class="avl-tree-img"><br>
+</p>
