@@ -48,3 +48,10 @@ li:hover{
     min-width: 50%;
     align-self: center;
 }
+#ins-img{
+    height: 25%;
+    width: 25%;
+    align-self: flex-start;
+    margin-top: 5%;
+    
+}
