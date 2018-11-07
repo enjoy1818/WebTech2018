@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="./Content/test.css">
+<h1 class="content-header">Linked-List</h1>
+<h2 class="content-sub_header">ลิงค์ลิสต์</h2>
+<p class="content-inner">
+    <b>ลิงค์ลิสต์</b> เป็นโครงสร้างข้อมูลที่ประกอบด้วยกลุ่มโหนด(Nodes)ที่มีการเรียงลำดับ <br>
+    โดยที่เราสามารถนำลิงค์ลิสต์มาใช้ในการสร้าง Linear หรือ Non-linear structures ก็ได้ <br>
+    ลิงค์ลิสต์ แบ่งได้เป็น 2 ประเภท คือ <br>
+    1. <b>Singly Linked List</b> : ลิงค์ลิสต์ที่ชี้ไปในทิศทางเดียว <br>
+    2. <b>Doubly Linked List</b> : ลิงค์ลิสต์ที่ชี้ในสองทิศทาง (ไป-กลับ) <br>
+</p>
+
+<h3 class="h3-header">โหนด(Nodes)</h3>
+<p class="content-inner">
+    โหนด เป็นโครงสร้างที่ประกอบด้วย 2 ส่วน คือ <br>
+    1. <b>ข้อมูล(Data)</b> : ข้อมูลในโหนดอาจประกอบด้วยข้อมูลชุดเดียว ข้อมูลหลายชุด หรือข้อมูลหนึ่งชุดที่ประกอบด้วยข้อมูลย่อยหลายชุดก็ได้ <br>
+    2. <b>ลิงค์(Link)</b> : ลิงค์ทำหน้าที่เชื่อมโหนดนั้นกับโหนดอื่นเข้าด้วยกัน เราสามารถใช้ pointer มาช่วยในการสร้างลิงค์ได้ <br>
+    <br>
+    ลิงค์ลิสต์ทุกอันจะต้องมีโหนดที่เรียกว่า "Head Node" โดยที่ Head Node จะเป็นตัวเก็บข้อมูลรายละเอียดเกี่ยวกับลิสต์เช่น จำนวนสมาชิกของลิสต์ ลิงค์ที่ชี้ไปยังโหนดแรก <br>
+</p>
+
+<h3 class="h3-header">Create List</h3>
+<p class="content-inner">
+    <b>ขั้นแรก</b> เราต้องทำการจองพื้นที่สำหรับ Head Node ก่อน <br>
+    <b>ขั้นที่สอง</b> เราต้องกำหนด head ของ Head Node ให้เป็น null <br>
+    <b>ขั้นที่สาม</b> เราต้องกำหนดค่า count ของ Head Node ให้เป็น 0 <br>
+    <img src="./Image/Content/linkedlist/pseudo_createlist.PNG" alt="" id="pseudo_createlist">
+</p>
+
+<h2 class="content-sub_header">Singly Linked List</h3>
+<h3 class="h3-header">Create Data Node</h3>
+<p class="content-inner">
+    <b>ขั้นแรก</b> สร้าง pointer ที่ชี้ไปยังหน่วยความจำที่เราจองไว้สำหรับโหนด <br>
+    <b>ขั้นที่สอง</b> กำหนดค่าของข้อมูลในโหนด <br>
+    <b>ขั้นที่สาม</b> กำหนด next ของโหนดให้เป็น null <br>
+    <b>ขั้นที่สี่</b> คืนค่าของ pointer นั้นออกมา <br>
+</p>
+
+<h3 class="h3-header">Insertion : Inserting Nodes at the Front of a List</h3>
+<p class="content-inner">
+    <b>ขั้นแรก</b> สร้างโหนดใหม่ขึ้นมาแล้วให้ pointer ที่ชื่อว่า pNew ชี้ที่โหนด <br>
+    <b>ขั้นที่สอง</b> กำหนด next ของโหนดใหม่ให้เป็นตำแหน่งที่ head ของ Head Node ชี้อยู่ <br>
+    <b>ขั้นที่สาม</b> กำหนด head ของ Head Node ให้ไปชี้ที่โหนดใหม่ <br>
+    <b>ขั้นที่สี่</b> เพิ่มค่า count ของ Head Node <br>
+</p>
+
+<h3 class="h3-header">Insertion : Inserting Nodes at the End of a List</h3>
+<p class="content-inner">
+    <b>ขั้นแรก</b> สร้างโหนดใหม่ขึ้นมาแล้วให้ pointer ที่ชื่อว่า pNew ชี้ที่โหนด <br>
+    <b>ขั้นที่สอง</b> เราต้องใช้ pointer ท่องเข้าไปใน list จนกว่าจะเจอตัวสุดท้าย (ตัวที่ next เป็น null) สมมติว่า pointer นี้ชื่อ start <br>
+    <b>ขั้นที่สาม</b> กำหนดให้ next ของโหนดที่ start ชี้อยู่ไปชี้ที่ pNew <br>
+    <b>ขั้นที่สี่</b> เพิ่มค่า count ของ Head Node
+</p>
+
+<h3 class="h3-header">Deletion</h3>
+<p class="content-inner">
+    การลบโหนดใน Linked List นั้นมีอยู่ 3 กรณี <br>
+    1. <b>กรณีที่ต้องการลบโหนดที่อยู่หัวลิสต์</b> <br>
+    ให้ pointer start ชี้ไปที่ root.head -> ให้ root.head ชี้ไปที่ start.next -> ลบ start ทิ้ง <br>
+    2. <b>กรณีที่ต้องการลบโหนดที่อยู่ระหว่างลิสต์</b> <br>
+    ให้ pointer prev ชี้ไปที่ root.head และ pointer start ชี้ไปที่ prev.next -> วนลูปให้ prev กับ start วิ่งไปด้วยกันไปจน start เจอโหนดที่ต้องการลบ <br>
+    -> ให้ prev.next ชี้ไปที่ start.next -> ลบ start ทิ้ง <br>
+    3. <b>กรณีที่ต้องการลบโหนดที่อยู่ท้ายลิสต์</b> <br>
+    ห้ pointer prev ชี้ไปที่ root.head และ pointer start ชี้ไปที่ prev.next -> วนลูปให้ prev กับ start วิ่งไปด้วยกันไปจน start เจอโหนดสุดท้าย <br>
+    -> กำหนดให้ prev.next เป็น null -> ลบ start ทิ้ง <br>
+</p>
+
+<h2 class="content-sub_header">Doubly Linked List</h2>
+<p class="content-inner">
+    Doubly Linked List คือลิงค์ลิสต์ที่มีลิงค์ 2 ทิศทาง คือ จากหน้าไปหลัง และ หลังไปหน้า <br>
+    <img src="./Image/Content/linkedlist/doubly-img.PNG" alt="" id="doubly-img">
+</p>
+
+<h3 class="h3-header">Inserting Nodes into a Doubly Linked List</h3>
+<p class="content-inner">
+    <img src="./Image/Content/linkedlist/doubly-insertion.PNG" alt="" id="doubly-insertion"><br><br>
+    ต้องการแทรกโหนด pNew ไว้หน้า start <br>
+    <b>ขั้นแรก</b> ให้ pNew.next ชี้ไปที่ start <br>
+    <b>ขั้นที่สอง</b> ให้ pNew.back ชี้ไปที่ start.back <br>
+    <b>ขั้นที่สาม</b> ให้ start.back.next ชี้ไปที่ pNew <br>
+    <b>ขั้นที่สี่</b> ให้ start.back ชี้ไปที่ pNew <br>
+</p>
+
+<h3 class="h3-header">Deleting Nodes from a Doubly Linked List</h3>
+<p class="content-inner">
+    <img src="./Image/Content/linkedlist/doubly-deletion.PNG" alt="" id="doubly-deletion"> <br><br>
+    ต้องการลบโหนด start <br>
+    <b>ขั้นแรก</b> ให้ start.back.next ชี้ไปที่ start.next <br>
+    <b>ขั้นที่สอง</b> ให้ start.next.back ชี้ไปที่ start.back <br>
+</p>
+
