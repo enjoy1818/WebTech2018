@@ -48,10 +48,14 @@ li:hover{
     min-width: 50%;
     align-self: center;
 }
-#ins-img{
-    height: 25%;
-    width: 25%;
+.ins-img{
+    width: 30%;
     align-self: flex-start;
     margin-top: 5%;
-    
+
+}
+.pseudocode-img{
+    width: 40%;
+    align-self: center;
+    margin-top: 5%;
 }
