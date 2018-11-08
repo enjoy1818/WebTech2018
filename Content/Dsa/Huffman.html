@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="./Content/test.css">
+<h1 class="content-header">Huffman Tree</h1>
+<h3 class="h3-header">Huffman Code</h2>
+<p class="content-inner">
+    โดยปกติเราใช้รหัส ASCII แทนอักขระต่างๆ ซึ่งเป็นการเข้ารหัสโดยใช้ 8 บิตต่อ 1 อักขระ <br>
+    เช่น อักขระ A มีรหัส ASCII เป็น 0100 0001 (65) <br>
+    ASCII เป็นการเข้ารหัสแบบความยาวคงที่ (Fixed Length) ถ้าข้อความประกอบด้วย 4 ตัวอักษร <br>
+    ก็ต้องใช้ 4*8 = 32 บิต เพื่อกำหนดข้อความนั้น <br>
+    <br>
+    <b>Huffman Code</b> เป็นการเข้ารหัสแบบความยาวไม่คงที่ (Variable Length) โดย <br>
+    ทำการเข้ารหัสโดยพิจารณาจากความถี่ของอักขระที่ปรากฏในเอกสาร ทำให้ใช้เนื้อที่ในการเก็บข้อมูลน้อยลง <br>
+    <br>
+    ตัวอย่าง : ถ้ามีข้อความ A B C A D B A E E B A <br>
+    ถ้าเข้ารหัส ASCII จะได้ 01000001 01000010 ….. (11*8 = 88 บิต) <br>
+    ถ้าเข้ารหัส Huffman จะพิจารณาจากความถี่ของอักขระที่ปรากฏ นั่นคือ A, B, C, D, E มีความถี่ 4, 3, 1, 1, 2 ตามลำดับ <br>
+    อักขระที่มีความถี่มากจะใช้รหัสสั้นกว่าอักขระที่มีความถี่น้อย ซึ่งกำหนดให้แทน <br>
+    A มีรหัส 11 <br>
+    B มีรหัส 10 <br>
+    C มีรหัส 000 <br>
+    D มีรหัส 001 <br>
+    E มีรหัส 01 <br>
+    จากโจทย์เมื่อเข้ารหัสจะได้ 11 10 000 11 001 10 11 01 01 10 11 (24 บิต) <br>
+    <br>
+    <u><b>ปัญหา</b></u> แล้วจะแทนอักขระอย่างไร (รู้ได้อย่างไรว่าแทน A เป็น 11) <br>
+    <u><b>ตอบ</b></u> ใช้ <b>Huffman Tree</b> <br>
+</p>
+
+<h3 class="h3-header">Huffman Tree</h3>
+<p class="content-inner">
+    Huffman Tree สามารถสร้างได้ตามขั้นตอนดังนี้ <br>
+    <b>ขั้นแรก</b> เรียงอักขระตามลำดับความถี่จากน้อยไปมากและมองอักขระเป็นโหนด <br>
+    <b>ขั้นที่สอง</b> จับโหนดที่มีความถี่น้อยที่สุด 2 โหนด ให้สร้าง Tree โดยมีโหนดพ่อเดียวกัน <br>
+    และความถี่โหนดพ่อเท่ากับผลบวกของความถี่ของโหนดลูก <br>
+    <b>ขั้นที่สาม</b> ทำไปเรื่อยๆจนได้ Tree ที่มีโหนดอักขระครบ <br>
+    <b>ขั้นที่สี่</b> กำหนดกิ่งซ้ายและขวาของ Tree มีค่าเข้ารหัส 0 และ 1 ตามลำดับ <br>
+    <br>
+    <b>ตัวอย่างของ Huffman Tree</b> <br>
+    <img src="./Image/Content/Huffman/huffman-tree-0.PNG" alt="" class="huffman-tree-img"><br>
+    <img src="./Image/Content/Huffman/huffman-tree-1.PNG" alt="" class="huffman-tree-img"><br>
+    <img src="./Image/Content/Huffman/huffman-tree-2.PNG" alt="" class="huffman-tree-img"><br>
+    <img src="./Image/Content/Huffman/huffman-tree-3.PNG" alt="" class="huffman-tree-img"><br>
+    <img src="./Image/Content/Huffman/huffman-tree-4.PNG" alt="" class="huffman-tree-img"><br>
+    <img src="./Image/Content/Huffman/huffman-tree-5.PNG" alt="" class="huffman-tree-img"><br>
+</p>
